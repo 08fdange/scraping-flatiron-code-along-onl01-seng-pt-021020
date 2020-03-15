@@ -10,6 +10,9 @@ class Scraper
     doc = Nokogiri::HTML(url)
   end
   
+  def get_courses
+    doc.css()
+  
   def print_courses
     self.make_courses
     Course.all.each do |course|
