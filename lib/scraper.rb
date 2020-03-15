@@ -11,7 +11,7 @@ class Scraper
   end
   
   def get_courses
-    course_offerings = get_page.css(".posts_holder.article.post")
+    course_offerings = get_page.css(".posts_holder#article.post")
   end
   
   def print_courses
